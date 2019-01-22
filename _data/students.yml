@@ -26,6 +26,7 @@
 - name: Sahil Saha
   github: sahilsaha7773
   image: SahilSaha.jpg
+  winner: true
 
 - name: Sahil Kumar
   github: sahildav
@@ -57,7 +58,8 @@
   image: hzimny.jpg
   lat: 50.094861
   lng: 18.541205
-
+  finalist: true
+  
 - name: Mikołaj Hojda
   github: mikolajhojda
   image: mhojda.jpg
@@ -65,14 +67,16 @@
 - name: Supun Tharinda
   github: STEdirisuriya
   image: supun.jpg
-
+  winner: true
+  
 - name: Nitesh Kumar Niranjan
   github: niteshkumarniranjan
   image: niteshkumarniranjan.jpg
   twitter: niranjannitesh
   lat: 24.191351
   lng: 86.299637
-
+  finalist: true
+  
 - name: Arjun Pandey
   github: arjunpandey2003
   image: arjun.jpg
@@ -102,7 +106,8 @@
 - name: Srihari Unnikrishnan
   github: pythongiant
   image: sr.jpg
-
+  finalist: true
+  
 - name: Shreesh Kumar Jha
   github: shreeshjha
   image: shreeshjha.jpg
@@ -131,7 +136,8 @@
   github: saarthakchats
   image: saarthak.jpg
   twitter: SaarthakChats41
-
+  finalist: true
+  
 - name: Akshit Goyal
   github: akshit15013
   image: AkshitGoyal.jpg
