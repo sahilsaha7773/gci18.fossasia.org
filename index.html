@@ -188,6 +188,54 @@ layout: default
     <!-- end of row -->
   </div>
   <!-- end of container -->
+	<div class="container">
+    <div class="row mb64 mb-xs-24">
+      <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+        <h2 class="section-heading">Finalists</h2>
+      </div>
+    </div>
+    <!-- end of row -->
+    <div class="container col-md-offset-3 text-center">
+      {% for student in site.data.students %}
+      {% if student.finalist %}
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="card single-mentor">
+          {% if student.image %}
+          <img class="mentor-img lazy reveal-content" data-src="img/students/{{student.image}}" alt="{{ student.name }}" />
+          {% else %}
+          <img src="img/mentors/member.png" alt="{{ student.name }}" /> {% endif
+          %}
+          <p class="student_name reveal-content">{{ student.name }}</p>
+
+          <ul class="list-inline social-list social-overlay-list">
+            {% if student.github %}
+            <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-github"></i>
+            </a>
+            {% endif %} {% if student.twitter %}
+
+            <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-twitter-alt"></i>
+            </a>
+            {% endif %} {% if student.blog %}
+
+            <a href="https://{{ student.blog }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-rss"></i>
+            </a>
+            {% endif %} {% if student.facebook %}
+
+            <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-facebook"></i>
+            </a>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <!-- end of row -->
+  </div>
 </section>
 
 <section id="connect">
